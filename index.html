@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces&family=Montserrat">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <div class="h-screen bg-[#F3EAE3] flex justify-center items-center">
+    <article class="h-fit flex justify-center items-center max-sm:flex-col">
+      <article class="h-96 w-60 max-sm:hidden">
+        <img class="h-full rounded-s-lg" src="images/image-product-desktop.jpg" alt="image-product-desktop">
+      </article>
+      <article class="h-56 w-80 hidden max-sm:block">
+        <img class="h-full rounded-t-lg" src="images/image-product-mobile.jpg" alt="image-product-mobile">
+      </article>
+      <article class="h-96 w-60 sm:rounded-e-lg bg-white flex max-sm:h-72 max-sm:w-80 max-sm:rounded-b-lg">
+        <div class="p-6 flex flex-col justify-around">
+          <main class="text-[hsl(228_12%_48%)] text-xs font-['Montserrat']">P E R F U M E</main>
+          <h1 class="text-black text-2xl font-bold font-['Fraunces']">Gabrielle Essence Eau De Parfum</h1>
+          <p class="text-[hsl(228_12%_48%)] text-xs font-['Montserrat']"
+          >A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+          <div class="flex justify-start items-center font-bold">
+            <p class="text-2xl text-[#3D8168] font-['Fraunces'] mr-5">$149.99</p>
+            <p class="text-xs line-through text-[hsl(228_12%_48%)] font-['Montserrat']">$169.99</p>
+          </div>
+            <button class="h-12 rounded-lg flex justify-center items-center bg-[#3D8168] text-xs text-white font-bold font-['Montserrat'] hover:cursor-pointer hover:bg-[hsl(137,33%,17%)]">
+              <svg class="mr-2" width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+              Add to Cart
+            </button>
+        </div>
+      </article>
+    </article>
+  </div>
+</body>
+</html>
